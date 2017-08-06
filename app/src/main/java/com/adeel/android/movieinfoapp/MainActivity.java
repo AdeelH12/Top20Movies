@@ -434,31 +434,9 @@ public class MainActivity extends AppCompatActivity {
 
         mList = (ListView) findViewById(R.id.listView);
 
-
-
-//        mImage = (ImageView) findViewById(R.id.poster);
-
-
-
-
-
         downloadImage dwn = new downloadImage();
         dwn.execute();
 
 
     }
 }
-
-
-
-
-
-
-
-
-
-//TODO (1) Download the movie titles for other movies
-//TODO (2) Download the images, ratings & overview associated with them movies
-//TODO (3) Make a listview with this information
-
-
