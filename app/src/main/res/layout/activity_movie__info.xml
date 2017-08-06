@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_movie__info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#424242"
+    tools:context="com.adeel.android.movieinfoapp.Movie_Poster_Download">
+
+    <ImageView
+        android:layout_marginTop="-20dp"
+        android:layout_width="match_parent"
+        android:id="@+id/movie_poster"
+        android:layout_height="235dp"
+
+/>
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_marginTop="-20dp"
+        android:background="#FF4081"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/movie_poster"
+        android:clipToPadding="false"
+        android:fadeScrollbars="false"
+        android:fitsSystemWindows="false"
+
+>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/movie_thumb"
+            />
+
+        <TextView
+            android:textColor="#F5F5F5"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/movie_poster"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="55dp"
+            android:id="@+id/title_tv"/>
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/release"
+            android:layout_below="@+id/title_tv"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_alignStart="@+id/title_tv"
+            android:textSize="15sp"
+            android:textColor="#F5F5F5"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:id="@+id/movie_info"
+        android:background="#9FA8DA"
+        android:layout_height="200dp"
+        android:layout_below="@+id/relative"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
+
+
